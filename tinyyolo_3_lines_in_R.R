@@ -3,7 +3,7 @@
 library(image.darknet)
 
 #If required, Set new working directory where the final predictions imaged with bounding box will be saved
-#setwd("/Users/abdrs/Documents/Py Codes/")
+#setwd("~/Documents/Py Codes/")
 
 #Define Model - here it is Tiny Yolo
 yolo_tiny_voc <- image_darknet_model(type = 'detect', 
@@ -12,6 +12,6 @@ yolo_tiny_voc <- image_darknet_model(type = 'detect',
                                      labels = system.file(package="image.darknet", "include", "darknet", "data", "voc.names"))
 
 #Image Detection
-x <- image_darknet_detect(file = "/Users/abdrs/Documents/Py Codes/google-car.png", 
+x <- image_darknet_detect(file = "/google-car.png", 
                           object = yolo_tiny_voc,
                           threshold = 0.19)
