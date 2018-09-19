@@ -1,4 +1,4 @@
-# tinyyolo_in_R
+# TinyYOLO in R
 Image Detection in R using `image.darknet` and Tiny YOLO
 
 # Input
